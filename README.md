@@ -1,6 +1,6 @@
 # `simenandre/setup-gke-gcloud-auth-plugin`
 
-## ⚠️ This plugin is deprecated. See the [migration guide](#migration-guide-to-google-github-actionsget-gke-credentialsv2) for how to achieve the same using Google's own github action
+## ⚠️ This plugin is deprecated. See the [migration guide](#migration-guide-to-google-github-actionssetup-gcloudv2) for how to achieve the same using Google's own github action
 
 This GitHub Actions installs a pre-requisite for "gcloud container clusters get-credentials"
 command with a modern k8s client.
@@ -53,7 +53,9 @@ jobs:
       - run: kubectl get pods
 ```
 
-### Migration guide to [google-github-actions/get-gke-credentials@v2](https://github.com/google-github-actions/get-gke-credentials)
+### Migration guide to [google-github-actions/setup-gcloud@v2](https://github.com/google-github-actions/setup-gcloud)
+
+This plugin can be replaced with the `google-github-actions/setup-gcloud@v2` action.
 
 Assuming this is your current setup using this plugin:
 
